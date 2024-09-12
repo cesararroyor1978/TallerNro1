@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Imagen superior relacionada con tema Matemático -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="@string/image_matematica"
+        android:src="@drawable/imagen_matematica" />
+
+    <!-- Solicitar dos datos númericos: Número 1 y Número 2 -->
+    <EditText
+        android:id="@+id/numero1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número 1"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/numero2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número 2"
+        android:inputType="number" />
+
+    <!-- Botón que cálcule la potencia de n1 elevado a n2 -->
+    <Button
+        android:id="@+id/btnCalcularPotencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Potencia" />
+
+    <!-- Radio buttons: hipotenusa, Mínimo común múltiplo y el mayor -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbHipotenusa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hipotenusa" />
+
+        <RadioButton
+            android:id="@+id/rbMCM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mínimo Común Múltiplo" />
+
+        <RadioButton
+            android:id="@+id/rbMayor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mayor" />
+    </RadioGroup>
+</LinearLayout>
